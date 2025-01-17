@@ -11,4 +11,4 @@ every 3 minutes for 24 hours using SGP4 library. With around 30,000 satellites t
 - Step 3 - Find all satellites within the clusters immediately next to current cluster to take care of satellites in different clusters but close to each other
 - Step 4 - Use the prune and sweep algorithm to find satellites that are close to each other by checking each individual dimension is with 100km of each other, and then doing a set intersection to ensure all 3 dimensions are close
 - Step 5 clean up 0 distance satellites because these are likely duplicated data points
-
+- Step 6 - after doing the "broad" stage and finding the possible set of collisions, we can then filter down more. We take each target satellite pair and time interval, and then use a binary search technique to find the local minimum of distance between the two satellites.
