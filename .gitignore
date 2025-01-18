@@ -1,2 +1,4 @@
 space_trace_collisions/data_cache/*
 space_trace_collisions/data_out/*
+**/__pycache__
+.mypy_cache/**

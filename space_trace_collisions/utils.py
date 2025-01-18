@@ -20,15 +20,3 @@ def save_pickle(json_path, data) -> None:
 def load_pickle(json_path):
   with open(json_path, 'rb') as file:
     return pickle.load(file)    
-
-
-# def save_satellite_trajectories_as_pickle(sat_trajectories):
-#   with open(sat_trajectories_pickle_path, 'wb') as file:
-#     pickle.dump(sat_trajectories, file)
-
-# def save_collisions(collisions):
-#   with open(collisions_path, 'w') as file:
-#     json.dump(collisions, file)
-  # with open(collisions_path_pickle, 'wb') as file:
-  #   pickle.dump(collisions_path_pickle, file)
-

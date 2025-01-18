@@ -2,6 +2,7 @@ from sgp4.api import jday  # type: ignore
 
 class Config:
   RUN_TIME_MINUTES = 60 * 24 # 24 hours
+  # RUN_TIME_MINUTES = 4 * 8 * 1 # 1 hour
   RUN_INTERVAL_MINUTES = 4 # 3 minutes
   COLLISION_DISTANCE = 100 # 100 km
   BOX_SIZE = 1200 # 2000 km box
@@ -9,9 +10,11 @@ class Config:
 
   SAT_JSON_PATH = './space_trace_collisions/data_in/satellites-api.json'
   COLLISIONS_PATH = './space_trace_collisions/data_cache/collisions.json'
+  COLLISIONS_PATH_NEW = './space_trace_collisions/data_cache/collisions_new.json'
   COLLISIONS_PATH_PICKLE = './space_trace_collisions/data_cache/collisions.pickle'
 
   RISK_COLLISIONS_PATH = './space_trace_collisions/data_out/risk-collisions.json'
+  RISK_COLLISIONS_PATH_NEW = './space_trace_collisions/data_out/risk-collisions-new.json'
   # SAT_TRAJECTORIES_PICKLE_PATH = './space_trace_collisions/data_out/sat_trajectories.pickle'
 
   
