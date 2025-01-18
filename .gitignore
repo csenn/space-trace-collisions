@@ -1,4 +1,9 @@
 space_trace_collisions/data_cache/*
+!space_trace_collisions/data_cache/.gitkeep
 space_trace_collisions/data_out/*
+!space_trace_collisions/data_out/.gitkeep
 **/__pycache__
 .mypy_cache/**
+
+
+.DS_Store
